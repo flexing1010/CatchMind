@@ -1,0 +1,32 @@
+{
+  "name": "catchmind",
+  "version": "1.0.0",
+  "description": "Realtime game built with socekIO",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexing1010/CatchMind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flexing1010/CatchMind/issues"
+  },
+  "homepage": "https://github.com/flexing1010/CatchMind#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "eslint": "^7.28.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.1.2"
+  }
+}
