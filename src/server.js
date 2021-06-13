@@ -30,3 +30,5 @@ io.on("connection", (socket) => {
     socket.nickname = nickname;
   });
 });
+
+console.log("Dd");
