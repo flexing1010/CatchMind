@@ -29,7 +29,7 @@ const socketController = (socket, io) => {
         setTimeout(() => {
           superBroadcast(events.gameStarted);
           io.to(leader.id).emit(events.leaderNotif, { word });
-          timeout = setTimeout(endGame, 30000);
+          timeout = setTimeout(endGame, 30500);
         }, 3000);
       }
     }

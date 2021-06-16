@@ -1,3 +1,5 @@
+import { handleGameStarted } from "./players";
+
 const body = document.querySelector("body");
 
 const fireNotification = (text, color) => {
@@ -14,4 +16,5 @@ export const handleNewUser = ({ nickname }) => {
 
 export const handleDisconnected = ({ nickname }) => {
   fireNotification(`${nickname} just left!`, "rgb(255,149,0)");
+  clearInterval(handleGameStarted());
 };
