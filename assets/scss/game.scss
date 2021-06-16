@@ -1,6 +1,6 @@
 .gameContainer {
   display: flex;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   justify-content: center;
   .canvas,
@@ -11,6 +11,15 @@
     box-shadow: 0 3px 36px rgba(23, 55, 87, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   }
   .main {
+    .game-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 25px;
+      margin-bottom: 15px;
+      .countDown {
+        font-weight: 500;
+      }
+    }
     margin-right: 200px;
     #jsCanvas {
       width: 700px;
